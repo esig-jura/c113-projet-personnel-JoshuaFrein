@@ -17,7 +17,7 @@
   padding: 0;
 }
 
-H1 {
+.title {
     margin-left: 50px;
     margin-top: 10px;
     color: #ee7000;
@@ -28,15 +28,93 @@ H1 {
 }
 
 body {
+    width: 80%;
+    margin: 0 auto;
+}
 
+.presentation {
+    background-image: url('images/pcFond.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 100%;
 }
 
 /* Header */
 header {
-
+    display: flex;             /* Place les éléments sur une même ligne */
+    align-items: center;       /* Centre verticalement logo et texte */
+    gap: 20px;                 /* Espace entre le logo et le titre */
 }
 
 /* Footer */
 footer {
 
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* toujours que 2 colonne pour les cartes */
+    gap: 2rem;
+    padding: 3rem 5%;
+    justify-items: center;
+}
+
+.card {
+    border-radius: 12px; /* Coins arrondis */
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);/* Ombre douce sous la carte */
+    color: white;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* COULEURS DES CARTES */
+.orange {
+    background-color: #f57c00;
+}
+
+.grey {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dark {
+    background-color: #102b4e;
+}
+
+.yellow {
+    background-color: #f7a400;
 }
