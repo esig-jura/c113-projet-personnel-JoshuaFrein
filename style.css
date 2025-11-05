@@ -33,7 +33,6 @@ body {
 }
 
 .presentation {
-    background-image: url('images/pcFond.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,15 +75,15 @@ h3 {
 }
 
 .card {
-    border-radius: 12px; /* Coins arrondis */
+    border-radius: 12px; /* coins arrondis */
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);/* Ombre douce sous la carte */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);/* ombre douce sous la carte */
     color: white;
     max-width: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.card:hover { /* ça fait un petit effet d'animation sur les cartes */
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
@@ -117,4 +116,13 @@ h3 {
 
 .yellow {
     background-color: #f7a400;
+}
+
+.monBouton {
+    background-color: #102b4e;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    align-items: center;
 }
