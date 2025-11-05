@@ -33,6 +33,7 @@ body {
 }
 
 .presentation {
+    background-image: url("images/pcFond.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,6 +52,9 @@ header {
 footer {
 
 }
+
+/*---------------------carte-------------------------*/
+/*                       v                           */
 
 h1 {
     margin-top: 40px;
@@ -126,3 +130,96 @@ h3 {
     border-radius: 50px;
     align-items: center;
 }
+
+/*                       ^                           */
+/*---------------------carte-------------------------*/
+
+/*-------------------PRE-BUILD-------------------------*/
+/*                       v                             */
+
+
+.prebuild {
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    background: #f2f2f2;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.prebuild-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.prebuild-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    color: #555;
+}
+
+.prebuild-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.prebuild-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.prebuild-image {
+    flex: 1;
+    text-align: center;
+}
+
+.prebuild-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.prebuild-button {
+    flex: 1;
+    text-align: center;
+}
+
+.btn-prebuild {
+    display: inline-block;
+    background-color: #d78e00;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-prebuild:hover {
+    background-color: #b87c00;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .prebuild-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .prebuild-button {
+        margin-top: 20px;
+    }
+}
+
+/*                       ^                             */
+/*-------------------PRE-BUILD-------------------------*/
