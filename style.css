@@ -128,7 +128,18 @@ h3 {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 50px;
-    align-items: center;
+}
+
+    .monBouton:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.05);
+    }
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* centre le bouton horizontalement */
+    width: 100%;
+    margin: 2rem 0;
 }
 
 /*                       ^                           */
