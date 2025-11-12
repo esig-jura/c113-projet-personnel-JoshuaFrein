@@ -171,12 +171,12 @@ h3 {
 }
 
 .prebuild-container {
-    display: flex;
+    display: flex; /*C'est pour créer un conteneur flexible qui aligne ses éléments enfants automatiquement.*/
     align-items: center;
     justify-content: space-around;
     max-width: 1200px;
     margin: auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Quand il n'y a plus de place, les éléments passent à la ligne suivante.*/
     gap: 40px;
 }
 
@@ -184,6 +184,7 @@ h3 {
     flex: 1;
     min-width: 300px;
     max-width: 450px;
+    margin-left: 2rem;
     color: #555;
 }
 
@@ -211,6 +212,7 @@ h3 {
 
 .prebuild-button {
     text-align: center;
+    margin-right: 2rem;
 }
 
 .btn-prebuild {
@@ -243,3 +245,69 @@ h3 {
 
 /*                       ^                             */
 /*-------------------PRE-BUILD-------------------------*/
+
+/*-------------------FOOTER-------------------------*/
+/*                       v                             */
+
+footer {
+    background-color: #1f1f1f; /* fond sombre */
+    color: #fff;
+    padding-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Conteneur principal du footer */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem; /* espace entre les colonnes */
+    flex-wrap: wrap; /* permet l’adaptation sur mobile */
+    padding: 2rem 5%;
+}
+
+/* Chaque colonne */
+.footer-column {
+    min-width: 250px;
+}
+
+/* Titres */
+.footer-column h3 {
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* Texte simple */
+.footer-column p {
+    margin: 0.4rem 0;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+/* Icônes (orange, légèrement décalées) */
+.icon {
+    color: #f57c00;
+    margin-right: 0.4rem;
+}
+
+/* Lien mail */
+.footer-column a {
+    color: #1e90ff; /* bleu clair pour contraste */
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Ligne tout en bas */
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #ccc;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
