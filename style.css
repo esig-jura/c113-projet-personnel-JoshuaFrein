@@ -33,12 +33,15 @@ body {
 }
 
 .presentation {
-    background-image: url("images/pcFond.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pcFond.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     min-height: 400px;
     width: 100%;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 40px;
 }
 
 /* Header */
@@ -66,6 +69,15 @@ h2 {
 
 h3 {
     margin-top: 10px;
+    text-align: center;
+}
+
+
+.servicesexplication {
+    background-color: lightgrey;
+    border-radius: 100px; /* coins arrondis */
+    padding: 2rem;
+    margin: 2rem;
 }
 
 
